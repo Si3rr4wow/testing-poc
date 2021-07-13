@@ -1,0 +1,13 @@
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.component-wrapper {
+  box-shadow: 1px 1px 1px 1px;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.component-label {
+  color: lightgray;
+}
