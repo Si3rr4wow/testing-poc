@@ -23,6 +23,7 @@ describe('ComponentB', () => {
     })
     // Integration test of A and B
     it('renders a child that displays the persons name', async () => {
+      /* === BEGINNING OF B UNIT TEST ===*/
       const id = getRandomString()
       const name = getRandomString();
       (findPerson as jest.Mock).mockImplementationOnce(() => Promise.resolve({ name }))
@@ -31,6 +32,7 @@ describe('ComponentB', () => {
       await act(async () => {
         render(<ComponentB id={id}/>)
       })
+      // === END OF A UNIT TEST === //
       const childComponent = screen.getByText(new RegExp(name))
       expect(childComponent).toBeVisible()
     })

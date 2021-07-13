@@ -24,6 +24,7 @@ describe('ComponentC', () => {
     })
     // Integration test of C and B
     it('has a child that fetches the person with the id I typed', async () => {
+      /* === BEGINNING OF C UNIT TEST ===*/
       const id = getRandomString()
       const name = getRandomString();
       (findPerson as jest.Mock).mockImplementation(() => Promise.resolve({ name }))
@@ -32,6 +33,7 @@ describe('ComponentC', () => {
       await act(async () => {
         fireEvent.change(input, { target: { value: id } })
       })
+      // === END OF B UNIT TEST === //
       expect(findPerson).toHaveBeenCalledWith(id)
     })
   })

@@ -8,7 +8,15 @@ exports[`ComponentD matches it\`s snapshot 1`] = `
     <code
       class="component-label"
     >
-      Component D
+      <h1>
+        Component D
+      </h1>
+      <p>
+        This component grabs a person's id from a url param
+      </p>
+      <p>
+        This component has a child which finds a person given an id
+      </p>
     </code>
     <p>
       The ID in the url is Snapshot id
@@ -19,7 +27,15 @@ exports[`ComponentD matches it\`s snapshot 1`] = `
       <code
         class="component-label"
       >
-        Component B
+        <h2>
+          Component B
+        </h2>
+        <p>
+          This component finds people when it is passed an id
+        </p>
+        <p>
+          This component has a child which displays names given names
+        </p>
       </code>
       <p>
         finding person with id Snapshot id
@@ -30,7 +46,12 @@ exports[`ComponentD matches it\`s snapshot 1`] = `
         <code
           class="component-label"
         >
-          Component A
+          <h3>
+            Component A
+          </h3>
+          <p>
+            This component displays names that are passed to it
+          </p>
         </code>
         <p>
           The person's name is Snapshot name
