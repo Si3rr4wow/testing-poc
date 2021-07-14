@@ -1,8 +1,8 @@
-import { render, screen } from "@testing-library/react"
-import ComponentB from "./ComponentB"
+import { render, screen } from '@testing-library/react'
+import ComponentB from './ComponentB'
 import { getRandomString } from './testUtils'
 import findPerson from './findPerson'
-import { act } from "react-dom/test-utils"
+import { act } from 'react-dom/test-utils'
 jest.mock('./findPerson', () => ({
   __esModule: true,
   default: jest.fn()
